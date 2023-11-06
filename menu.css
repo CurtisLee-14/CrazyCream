@@ -1,0 +1,78 @@
+.navbar-nav > a{
+    font-size: x-large;
+}
+
+.menu-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: repeat(.5, 3);
+}
+
+.title{
+    grid-column-start: 3;
+    text-align: center;
+}
+
+.title h1{
+    font-size: 4vw;
+    color: darkkhaki;
+}
+
+.options{
+    grid-column-start: 2;
+    grid-row-start: 2;
+    display: block;
+}
+
+.options h2{
+    color: darkkhaki;
+
+}
+
+.options li{
+    text-align: left;
+}
+
+.addons{
+    grid-area: 3/2/3/2;
+}
+
+.addons h2{
+    color: darkkhaki;
+}
+
+.addons li{
+    text-align: left;
+}
+
+.flavors{
+    grid-area: 2/4/4/4;
+}
+
+.flavors h2{
+    margin-left: 4%;
+    color: darkkhaki;
+
+}
+
+.flavors li{
+    text-align: left;
+}
+
+@media (max-width: 600px){
+    .flavors h2{
+        margin-left: 10%;
+    }
+
+    .options h2{
+        margin-left: 15%;
+    }
+    
+    .addons h2{
+        margin-left: 10%;
+    }
+
+    .title h1{
+        font-size: 35px;
+    }
+}
